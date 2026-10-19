@@ -13,5 +13,5 @@ var li=[].slice.call(ul.children);function run(){var v=q.value.toLowerCase(),t=t
 li.sort(function(a,b){if(s==='team'){var c=a.dataset.tsort.localeCompare(b.dataset.tsort);if(c)return c;}var d=(+b.dataset.ts)-(+a.dataset.ts);if(s==='old')d=-d;return d||(s==='old'?b.dataset.i-a.dataset.i:a.dataset.i-b.dataset.i);});
 var n=0;li.forEach(function(l){ul.appendChild(l);var ok=(!t||l.dataset.team.split('|').indexOf(t)>-1)&&l.textContent.toLowerCase().indexOf(v)>-1;l.style.display=ok?'':'none';if(ok)n++;});ct.textContent=n+' of '+li.length+' moves';}
 q.addEventListener('input',run);so.addEventListener('change',run);tm.addEventListener('change',run);run();})();</script></main>
-<footer><div class="wrap">Data from Yahoo Fantasy. Updated Mon Oct 12 11:52pm PDT. <span class="muted">· Site built Oct 13, 2026 · Unofficial league site, not affiliated with Yahoo.</span></div></footer>
+<footer><div class="wrap">Data from Yahoo Fantasy. Updated Mon Oct 12 11:52pm PDT. <span class="muted">· Site built Oct 18, 2026 · Unofficial league site, not affiliated with Yahoo.</span></div></footer>
 </body></html>
