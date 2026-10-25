@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="assets/style.css"><link rel="icon" href="assets/favicon.ico" sizes="any"><link rel="icon" type="image/png" href="assets/favicon.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><meta name="theme-color" content="#2a622a"></head><body>
 <header class="nav"><div class="wrap navin"><a class="brand" href="index.html"><img class="brandlogo" src="assets/logo.png" alt=""> Tacos Tolteca DGFFL <small>2026</small></a>
 <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('open')">☰</button>
-<nav><a href="index.html">Home</a><a href="standings.html">Standings</a><a href="results.html">Results</a><a href="power-rankings.html">Power Rankings</a><a href="teams/index.html">Teams</a><a href="news/index.html">News</a><a href="transactions.html" class="on">Transactions</a><a href="league.html">League Info</a></nav></div></header>
+<nav><a href="index.html">Home</a><a href="standings.html">Standings</a><a href="results.html">Results</a><a href="power-rankings.html">Power Rankings</a><a href="wags.html">WAGs</a><a href="teams/index.html">Teams</a><a href="news/index.html">News</a><a href="transactions.html" class="on">Transactions</a><a href="league.html">League Info</a></nav></div></header>
 <main class="wrap"><h1>Transactions</h1>
 <div class="filters txctl"><input id="q" type="search" placeholder="Search team or player…" aria-label="Search transactions">
 <select id="tsort" aria-label="Sort"><option value="new">Newest first</option><option value="old">Oldest first</option><option value="team">Team A–Z</option></select>
@@ -13,5 +13,5 @@ var li=[].slice.call(ul.children);function run(){var v=q.value.toLowerCase(),t=t
 li.sort(function(a,b){if(s==='team'){var c=a.dataset.tsort.localeCompare(b.dataset.tsort);if(c)return c;}var d=(+b.dataset.ts)-(+a.dataset.ts);if(s==='old')d=-d;return d||(s==='old'?b.dataset.i-a.dataset.i:a.dataset.i-b.dataset.i);});
 var n=0;li.forEach(function(l){ul.appendChild(l);var ok=(!t||l.dataset.team.split('|').indexOf(t)>-1)&&l.textContent.toLowerCase().indexOf(v)>-1;l.style.display=ok?'':'none';if(ok)n++;});ct.textContent=n+' of '+li.length+' moves';}
 q.addEventListener('input',run);so.addEventListener('change',run);tm.addEventListener('change',run);run();})();</script></main>
-<footer><div class="wrap">Data from Yahoo Fantasy. Updated Mon Oct 19 11:54pm PDT. <span class="muted">· Site built Oct 20, 2026 · Unofficial league site, not affiliated with Yahoo.</span></div></footer>
+<footer><div class="wrap">Data from Yahoo Fantasy. Updated Mon Oct 19 11:54pm PDT. <span class="muted">· Site built Oct 25, 2026 · Unofficial league site, not affiliated with Yahoo.</span></div></footer>
 </body></html>
